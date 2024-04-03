@@ -1,18 +1,6 @@
 class Printer {
 
-    field int kek;
-
-    constructor Printer new(int lul) {
-        let kek = lul;
-        return this;
-    }
-
-    method void dispose() {
-        do Memory.deAlloc(this);
-        return;
-    }
-
-    method void drawMoney(int shift){
+    function void drawMoney(int shift){
         do Screen.drawCircle(128 +  shift, 128, 64);
         do Screen.setColor(false);
         do Screen.drawCircle(128 + shift, 128, 59);
@@ -25,7 +13,7 @@ class Printer {
         return;
     }
 
-    method void drawBeer(int shift){
+    function void drawBeer(int shift){
         do Screen.drawRectangle(90 + shift, 108, 116 + shift, 160);
         do Screen.setColor(false);
         do Screen.drawRectangle(93 + shift, 111, 113 + shift, 157);
@@ -54,7 +42,7 @@ class Printer {
         return;
     }
 
-    method void drawDream(int shift){
+    function void drawDream(int shift){
         do Screen.drawRectangle(120 + shift, 100, 125 + shift, 122);
         do Screen.drawRectangle(120 + shift, 73, 125 + shift, 95);
         do Screen.drawRectangle(100 + shift, 73, 105 + shift, 95);
@@ -82,7 +70,7 @@ class Printer {
         return;
     }
 
-    method void drawGeo(int shift){
+    function void drawGeo(int shift){
         do Screen.drawCircle(151 + shift, 155, 12);
         do Screen.setColor(false);
         do Screen.drawCircle(149 + shift, 153, 7);
@@ -96,7 +84,7 @@ class Printer {
         return;
     }
 
-    method void writeLose(){
+    function void writeLose(){
         do Screen.drawRectangle(322, 155, 346, 160);
         do Screen.drawRectangle(322, 95, 346, 100);
         do Screen.drawRectangle(197, 155, 221, 160);
@@ -131,13 +119,13 @@ class Printer {
         return;
     }
 
-    method void writeWin(){
+    function void writeWin(){
         do Screen.drawRectangle(253, 84, 408, 89);
-        do writeLose();
+        do Printer.writeLose();
         return;
     }
     
-    method void writeDraw(){
+    function void writeDraw(){
         do Screen.drawCircle(256, 128, 100);
         do Screen.setColor(false);
         do Screen.drawCircle(256, 128, 95);
@@ -150,13 +138,13 @@ class Printer {
         return;
     }
 
-    method void drawMM(int shift){
-        do drawM(0 + shift, 0);
-        do drawM(43 + shift, -36);
+    function void drawMM(int shift){
+        do Printer.drawM(0 + shift, 0);
+        do Printer.drawM(43 + shift, -36);
         return;
     }
 
-    method void drawM(int shift, int shiftY){
+    function void drawM(int shift, int shiftY){
         do Screen.drawRectangle(113 + shift, 125 + shiftY, 117 + shift, 129 + shiftY);
         do Screen.drawRectangle(109 + shift, 129 + shiftY, 113 + shift, 133 + shiftY);
         do Screen.drawRectangle(105 + shift, 133 + shiftY, 109 + shift, 137 + shiftY);

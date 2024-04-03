@@ -1,11 +1,9 @@
 class Game {
 
     field Array randomNumbers;
-    field Printer printer;
 
     constructor Game new() {
         let randomNumbers = Array.new(20);
-        let printer = Printer.new(0);
         let randomNumbers[0] = 89;
         let randomNumbers[1] = 9588;
         let randomNumbers[2] = 7365;
@@ -55,19 +53,19 @@ class Game {
                 let exit = true;
             }
             if (key = 49){
-                do printer.drawGeo(0);
+                do Printer.drawGeo(0);
             }
             if (key = 50){
-                do printer.drawBeer(0);
+                do Printer.drawBeer(0);
             }
             if (key = 51){
-                do printer.drawDream(0);
+                do Printer.drawDream(0);
             }
             if (key = 52){
-                do printer.drawMM(0);
+                do Printer.drawMM(0);
             }
             if (key = 53){
-                do printer.drawMoney(0);
+                do Printer.drawMoney(0);
             }
             let memoryKey = Keyboard.keyPressed();
             while (~(key = 0)) {
@@ -78,19 +76,19 @@ class Game {
                     }
                     let variant = (randomNumbers[i] + key) - (((randomNumbers[i] + key) / 5) * 5);
                     if (variant = 0){
-                        do printer.drawGeo(256);
+                        do Printer.drawGeo(256);
                     }
                     if (variant = 1){
-                        do printer.drawBeer(256);
+                        do Printer.drawBeer(256);
                     }
                     if (variant = 2){
-                        do printer.drawDream(256);
+                        do Printer.drawDream(256);
                     }
                     if (variant = 3){
-                        do printer.drawMM(256);
+                        do Printer.drawMM(256);
                     }
                     if (variant = 4){
-                        do printer.drawMoney(256);
+                        do Printer.drawMoney(256);
                     }
                 }
             }
@@ -99,57 +97,57 @@ class Game {
             do Screen.clearScreen();
             if (memoryKey = 49){
                 if ((variant = 1) | (variant = 3)){
-                    do printer.writeWin();
+                    do Printer.writeWin();
                 }
                 if ((variant = 2) | (variant = 4)){
-                    do printer.writeLose();
+                    do Printer.writeLose();
                 }
                 if (variant = 0){
-                    do printer.writeDraw();
+                    do Printer.writeDraw();
                 }
             }
             if (memoryKey = 50){
                 if ((variant = 2) | (variant = 4)){
-                    do printer.writeWin();
+                    do Printer.writeWin();
                 }
                 if ((variant = 0) | (variant = 3)){
-                    do printer.writeLose();
+                    do Printer.writeLose();
                 }
                 if (variant = 1){
-                    do printer.writeDraw();
+                    do Printer.writeDraw();
                 }
             }
             if (memoryKey = 51){
                 if ((variant = 0) | (variant = 3)){
-                    do printer.writeWin();
+                    do Printer.writeWin();
                 }
                 if ((variant = 1) | (variant = 4)){
-                    do printer.writeLose();
+                    do Printer.writeLose();
                 }
                 if (variant = 2){
-                    do printer.writeDraw();
+                    do Printer.writeDraw();
                 }
             }
             if (memoryKey = 52){
                 if ((variant = 1) | (variant = 4)){
-                    do printer.writeWin();
+                    do Printer.writeWin();
                 }
                 if ((variant = 0) | (variant = 2)){
-                    do printer.writeLose();
+                    do Printer.writeLose();
                 }
                 if (variant = 3){
-                    do printer.writeDraw(); 
+                    do Printer.writeDraw(); 
                 }
             }
             if (memoryKey = 53){
                 if ((variant = 0) | (variant = 2)){
-                    do printer.writeWin();
+                    do Printer.writeWin();
                 }
                 if ((variant = 1) | (variant = 3)){
-                    do printer.writeLose();
+                    do Printer.writeLose();
                 }
                 if (variant = 4){
-                    do printer.writeDraw();
+                    do Printer.writeDraw();
                 }
             }
             do Screen.drawLine(255, 1, 255, 255);

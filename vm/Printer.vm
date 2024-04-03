@@ -1,24 +1,6 @@
-function Printer.new 0
-push constant 1
-call Memory.alloc 1
-pop pointer 0
-push argument 0
-pop this 0
-push pointer 0
-return
-function Printer.dispose 0
-push argument 0
-pop pointer 0
-push pointer 0
-call Memory.deAlloc 1
-pop temp 0
-push constant 0
-return
 function Printer.drawMoney 0
-push argument 0
-pop pointer 0
 push constant 128
-push argument 1
+push argument 0
 add
 push constant 128
 push constant 64
@@ -28,7 +10,7 @@ push constant 0
 call Screen.setColor 1
 pop temp 0
 push constant 128
-push argument 1
+push argument 0
 add
 push constant 128
 push constant 59
@@ -39,51 +21,51 @@ not
 call Screen.setColor 1
 pop temp 0
 push constant 106
-push argument 1
+push argument 0
 add
 push constant 88
 push constant 111
-push argument 1
+push argument 0
 add
 push constant 169
 call Screen.drawRectangle 4
 pop temp 0
 push constant 106
-push argument 1
+push argument 0
 add
 push constant 88
 push constant 157
-push argument 1
+push argument 0
 add
 push constant 93
 call Screen.drawRectangle 4
 pop temp 0
 push constant 152
-push argument 1
+push argument 0
 add
 push constant 88
 push constant 157
-push argument 1
+push argument 0
 add
 push constant 128
 call Screen.drawRectangle 4
 pop temp 0
 push constant 102
-push argument 1
+push argument 0
 add
 push constant 123
 push constant 157
-push argument 1
+push argument 0
 add
 push constant 128
 call Screen.drawRectangle 4
 pop temp 0
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 146
 push constant 123
-push argument 1
+push argument 0
 add
 push constant 151
 call Screen.drawRectangle 4
@@ -91,14 +73,12 @@ pop temp 0
 push constant 0
 return
 function Printer.drawBeer 0
-push argument 0
-pop pointer 0
 push constant 90
-push argument 1
+push argument 0
 add
 push constant 108
 push constant 116
-push argument 1
+push argument 0
 add
 push constant 160
 call Screen.drawRectangle 4
@@ -107,11 +87,11 @@ push constant 0
 call Screen.setColor 1
 pop temp 0
 push constant 93
-push argument 1
+push argument 0
 add
 push constant 111
 push constant 113
-push argument 1
+push argument 0
 add
 push constant 157
 call Screen.drawRectangle 4
@@ -121,147 +101,147 @@ not
 call Screen.setColor 1
 pop temp 0
 push constant 116
-push argument 1
+push argument 0
 add
 push constant 120
 push constant 131
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 129
-push argument 1
+push argument 0
 add
 push constant 122
 push constant 131
-push argument 1
+push argument 0
 add
 push constant 146
 call Screen.drawRectangle 4
 pop temp 0
 push constant 116
-push argument 1
+push argument 0
 add
 push constant 146
 push constant 131
-push argument 1
+push argument 0
 add
 push constant 148
 call Screen.drawRectangle 4
 pop temp 0
 push constant 116
-push argument 1
+push argument 0
 add
 push constant 112
 push constant 121
-push argument 1
+push argument 0
 add
 push constant 114
 call Screen.drawRectangle 4
 pop temp 0
 push constant 119
-push argument 1
+push argument 0
 add
 push constant 103
 push constant 121
-push argument 1
+push argument 0
 add
 push constant 112
 call Screen.drawRectangle 4
 pop temp 0
 push constant 87
-push argument 1
+push argument 0
 add
 push constant 108
 push constant 90
-push argument 1
+push argument 0
 add
 push constant 110
 call Screen.drawRectangle 4
 pop temp 0
 push constant 87
-push argument 1
+push argument 0
 add
 push constant 101
 push constant 89
-push argument 1
+push argument 0
 add
 push constant 108
 call Screen.drawRectangle 4
 pop temp 0
 push constant 89
-push argument 1
+push argument 0
 add
 push constant 101
 push constant 94
-push argument 1
+push argument 0
 add
 push constant 103
 call Screen.drawRectangle 4
 pop temp 0
 push constant 92
-push argument 1
+push argument 0
 add
 push constant 95
 push constant 94
-push argument 1
+push argument 0
 add
 push constant 101
 call Screen.drawRectangle 4
 pop temp 0
 push constant 94
-push argument 1
+push argument 0
 add
 push constant 95
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 97
 call Screen.drawRectangle 4
 pop temp 0
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 95
 push constant 102
-push argument 1
+push argument 0
 add
 push constant 100
 call Screen.drawRectangle 4
 pop temp 0
 push constant 102
-push argument 1
+push argument 0
 add
 push constant 98
 push constant 110
-push argument 1
+push argument 0
 add
 push constant 100
 call Screen.drawRectangle 4
 pop temp 0
 push constant 110
-push argument 1
+push argument 0
 add
 push constant 98
 push constant 112
-push argument 1
+push argument 0
 add
 push constant 101
 call Screen.drawRectangle 4
 pop temp 0
 push constant 110
-push argument 1
+push argument 0
 add
 push constant 101
 push constant 121
-push argument 1
+push argument 0
 add
 push constant 103
 call Screen.drawRectangle 4
 pop temp 0
 push constant 163
-push argument 1
+push argument 0
 add
 push constant 110
 push constant 15
@@ -271,7 +251,7 @@ push constant 0
 call Screen.setColor 1
 pop temp 0
 push constant 163
-push argument 1
+push argument 0
 add
 push constant 110
 push constant 13
@@ -282,21 +262,21 @@ not
 call Screen.setColor 1
 pop temp 0
 push constant 155
-push argument 1
+push argument 0
 add
 push constant 143
 push constant 171
-push argument 1
+push argument 0
 add
 push constant 145
 call Screen.drawRectangle 4
 pop temp 0
 push constant 162
-push argument 1
+push argument 0
 add
 push constant 124
 push constant 164
-push argument 1
+push argument 0
 add
 push constant 160
 call Screen.drawRectangle 4
@@ -304,244 +284,242 @@ pop temp 0
 push constant 0
 return
 function Printer.drawDream 0
-push argument 0
-pop pointer 0
 push constant 120
-push argument 1
+push argument 0
 add
 push constant 100
 push constant 125
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 120
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 125
-push argument 1
+push argument 0
 add
 push constant 95
 call Screen.drawRectangle 4
 pop temp 0
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 105
-push argument 1
+push argument 0
 add
 push constant 95
 call Screen.drawRectangle 4
 pop temp 0
 push constant 156
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 161
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 168
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 173
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 145
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 150
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 123
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 128
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 93
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 98
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 155
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 160
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 177
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 182
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 190
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 195
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 134
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 139
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 74
-push argument 1
+push argument 0
 add
 push constant 78
 push constant 79
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 96
-push argument 1
+push argument 0
 add
 push constant 178
 push constant 118
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 98
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 108
-push argument 1
+push argument 0
 add
 push constant 139
 call Screen.drawRectangle 4
 pop temp 0
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 117
 push constant 120
-push argument 1
+push argument 0
 add
 push constant 122
 call Screen.drawRectangle 4
 pop temp 0
 push constant 128
-push argument 1
+push argument 0
 add
 push constant 134
 push constant 145
-push argument 1
+push argument 0
 add
 push constant 139
 call Screen.drawRectangle 4
 pop temp 0
 push constant 173
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 190
-push argument 1
+push argument 0
 add
 push constant 78
 call Screen.drawRectangle 4
 pop temp 0
 push constant 139
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 156
-push argument 1
+push argument 0
 add
 push constant 78
 call Screen.drawRectangle 4
 pop temp 0
 push constant 128
-push argument 1
+push argument 0
 add
 push constant 178
 push constant 145
-push argument 1
+push argument 0
 add
 push constant 183
 call Screen.drawRectangle 4
 pop temp 0
 push constant 160
-push argument 1
+push argument 0
 add
 push constant 156
 push constant 177
-push argument 1
+push argument 0
 add
 push constant 161
 call Screen.drawRectangle 4
 pop temp 0
 push constant 173
-push argument 1
+push argument 0
 add
 push constant 90
 push constant 190
-push argument 1
+push argument 0
 add
 push constant 95
 call Screen.drawRectangle 4
 pop temp 0
 push constant 100
-push argument 1
+push argument 0
 add
 push constant 95
 push constant 125
-push argument 1
+push argument 0
 add
 push constant 100
 call Screen.drawRectangle 4
 pop temp 0
 push constant 61
-push argument 1
+push argument 0
 add
 push constant 73
 push constant 93
-push argument 1
+push argument 0
 add
 push constant 78
 call Screen.drawRectangle 4
@@ -549,10 +527,8 @@ pop temp 0
 push constant 0
 return
 function Printer.drawGeo 0
-push argument 0
-pop pointer 0
 push constant 151
-push argument 1
+push argument 0
 add
 push constant 155
 push constant 12
@@ -562,7 +538,7 @@ push constant 0
 call Screen.setColor 1
 pop temp 0
 push constant 149
-push argument 1
+push argument 0
 add
 push constant 153
 push constant 7
@@ -573,61 +549,61 @@ not
 call Screen.setColor 1
 pop temp 0
 push constant 122
-push argument 1
+push argument 0
 add
 push constant 159
 push constant 136
-push argument 1
+push argument 0
 add
 push constant 167
 call Screen.drawRectangle 4
 pop temp 0
 push constant 122
-push argument 1
+push argument 0
 add
 push constant 144
 push constant 136
-push argument 1
+push argument 0
 add
 push constant 153
 call Screen.drawRectangle 4
 pop temp 0
 push constant 122
-push argument 1
+push argument 0
 add
 push constant 130
 push constant 136
-push argument 1
+push argument 0
 add
 push constant 138
 call Screen.drawRectangle 4
 pop temp 0
 push constant 108
-push argument 1
+push argument 0
 add
 push constant 90
 push constant 155
-push argument 1
+push argument 0
 add
 push constant 108
 call Screen.drawRectangle 4
 pop temp 0
 push constant 113
-push argument 1
+push argument 0
 add
 push constant 130
 push constant 122
-push argument 1
+push argument 0
 add
 push constant 167
 call Screen.drawRectangle 4
 pop temp 0
 push constant 90
-push argument 1
+push argument 0
 add
 push constant 90
 push constant 108
-push argument 1
+push argument 0
 add
 push constant 167
 call Screen.drawRectangle 4
@@ -635,8 +611,6 @@ pop temp 0
 push constant 0
 return
 function Printer.writeLose 0
-push argument 0
-pop pointer 0
 push constant 322
 push constant 155
 push constant 346
@@ -819,22 +793,17 @@ pop temp 0
 push constant 0
 return
 function Printer.writeWin 0
-push argument 0
-pop pointer 0
 push constant 253
 push constant 84
 push constant 408
 push constant 89
 call Screen.drawRectangle 4
 pop temp 0
-push pointer 0
-call Printer.writeLose 1
+call Printer.writeLose 0
 pop temp 0
 push constant 0
 return
 function Printer.writeDraw 0
-push argument 0
-pop pointer 0
 push constant 256
 push constant 128
 push constant 100
@@ -878,151 +847,145 @@ pop temp 0
 push constant 0
 return
 function Printer.drawMM 0
-push argument 0
-pop pointer 0
-push pointer 0
 push constant 0
-push argument 1
+push argument 0
 add
 push constant 0
-call Printer.drawM 3
+call Printer.drawM 2
 pop temp 0
-push pointer 0
 push constant 43
-push argument 1
+push argument 0
 add
 push constant 36
 neg
-call Printer.drawM 3
+call Printer.drawM 2
 pop temp 0
 push constant 0
 return
 function Printer.drawM 0
-push argument 0
-pop pointer 0
 push constant 113
-push argument 1
+push argument 0
 add
 push constant 125
-push argument 2
-add
-push constant 117
 push argument 1
 add
+push constant 117
+push argument 0
+add
 push constant 129
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 109
-push argument 1
+push argument 0
 add
 push constant 129
-push argument 2
-add
-push constant 113
 push argument 1
 add
+push constant 113
+push argument 0
+add
 push constant 133
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 105
-push argument 1
+push argument 0
 add
 push constant 133
-push argument 2
-add
-push constant 109
 push argument 1
 add
+push constant 109
+push argument 0
+add
 push constant 137
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 101
-push argument 1
+push argument 0
 add
 push constant 137
-push argument 2
-add
-push constant 105
 push argument 1
 add
+push constant 105
+push argument 0
+add
 push constant 141
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 97
-push argument 1
+push argument 0
 add
 push constant 133
-push argument 2
-add
-push constant 101
 push argument 1
 add
+push constant 101
+push argument 0
+add
 push constant 137
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 93
-push argument 1
+push argument 0
 add
 push constant 129
-push argument 2
-add
-push constant 97
 push argument 1
 add
+push constant 97
+push argument 0
+add
 push constant 133
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 89
-push argument 1
+push argument 0
 add
 push constant 125
-push argument 2
-add
-push constant 93
 push argument 1
 add
+push constant 93
+push argument 0
+add
 push constant 129
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 117
-push argument 1
-add
-push constant 121
-push argument 2
+push argument 0
 add
 push constant 121
 push argument 1
+add
+push constant 121
+push argument 0
 add
 push constant 171
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
 push constant 85
-push argument 1
+push argument 0
 add
 push constant 121
-push argument 2
-add
-push constant 89
 push argument 1
 add
+push constant 89
+push argument 0
+add
 push constant 171
-push argument 2
+push argument 1
 add
 call Screen.drawRectangle 4
 pop temp 0
